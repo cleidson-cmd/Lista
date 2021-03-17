@@ -80,6 +80,19 @@ class unorderedlist:
             previous.setNext(current.getNext())
 
 
+
+    def view(self):
+        current = self.head
+        found = False
+        while current != None:
+            print(current.getData())   
+            current = current.getNext()
+
+    
+
+        
+        
+
 lista = unorderedlist()
 
 lista.add(28)
@@ -89,5 +102,7 @@ lista.remove(28)
 print(lista.size())
 print(lista.search(23))
 print(lista.isEmpty())
+lista.add(5543)
 
+lista.view()
 
